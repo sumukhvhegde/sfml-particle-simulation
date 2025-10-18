@@ -1,4 +1,5 @@
 #pragma once
+
 #include "Particle.hpp"
 #include <vector>
 
@@ -10,7 +11,7 @@ private:
 public:
 	Simulation();
 
-	void addParticle(sf::Vector2f position);
+	void addParticle(sf::Vector2f& position);
 	void update(float dt, const sf::Vector2u& windowSize);
 	void draw(sf::RenderWindow& window);
 };
